@@ -31,8 +31,12 @@ Deployment [on Render](https://rest-to-graphql-conversion.onrender.com)
               
 ## <a name="Testing"></a>Testing
 
-To verify that the app was deployed on Render: visit 
-You should see the following screenshot
+To verify that the app was deployed on Render: 
+- go to [the Render deployment](https://rest-to-graphql-conversion.onrender.com)
+- You should see the following, which indicates that an API server is running
+ 
+![image](https://github.com/user-attachments/assets/d8df3432-7575-4c6d-91d2-a6db7c49fe18)
+
 
 To verify GraphQL server creation: 
 - follow installation instructions 
