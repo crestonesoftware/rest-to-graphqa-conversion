@@ -2,6 +2,7 @@ const express = require("express");
 const { ApolloServer } = require("@apollo/server");
 const { expressMiddleware } = require("@apollo/server/express4");
 const path = require("path");
+require("dotenv").config();
 
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
@@ -34,6 +35,7 @@ const startApolloServer = async () => {
     app.listen(PORT, () => {
       console.log(`API server now listening on localhost:${PORT}`);
       console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
+      console.log("process.env.JWT_SECRET",process.env.JWT_SECRET);
     });
   });
 };

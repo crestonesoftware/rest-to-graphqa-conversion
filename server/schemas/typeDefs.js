@@ -13,8 +13,8 @@ const typeDefs = `
   }
     
   type Query {
-    users: [User]
-    user(_id: ID!): User
+    getAllUsers: [User]
+    getSingleUser(_id: ID!): User
   }
 
   type Mutation {
